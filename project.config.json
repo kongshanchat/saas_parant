@@ -1,0 +1,104 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.1",
+	"appid": "wx5665ff6cb01c70ac",
+	"projectname": "%E5%AE%B6%E9%95%BF%E7%AB%AF",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 9,
+			"list": [
+				{
+					"id": -1,
+					"name": "课消记录",
+					"pathName": "pages/coueseForm/coueseForm",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "学员",
+					"pathName": "pages/selectStu/selectStu",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的课程",
+					"pathName": "pages/mycourse/mycourse",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "课评详情",
+					"pathName": "pages/commentDetail/commentDetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/my/my",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "机构切换",
+					"pathName": "pages/changeAgency/changeAgency",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "order",
+					"pathName": "pages/order/order",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "课评作业",
+					"pathName": "pages/homework/homework",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "授权",
+					"pathName": "pages/auth/auth",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "录音记录",
+					"pathName": "pages/banjiRecord/banjiRecord"
+				}
+			]
+		}
+	}
+}

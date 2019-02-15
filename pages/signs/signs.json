@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "排课列表",
+  "enablePullDownRefresh":true,
+  "usingComponents": {
+    "zan-tab": "../../dist/tab/index",
+    "zan-loadmore": "../../dist/loadmore/index"
+  }
+}

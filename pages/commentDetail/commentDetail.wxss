@@ -1,0 +1,89 @@
+/* pages/commentDetail/commentDetail.wxss */
+page{
+  background: #fff;
+}
+.bodys{
+  padding: 40rpx 24rpx;
+}
+
+.tops_avatar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tops_avatar image{
+  width: 120rpx;
+  height: 120rpx;
+  border: 8rpx solid #ebebeb;
+  border-radius: 68rpx;
+  margin-bottom: 20rpx;
+}
+
+.teacherName{
+  font-size: 32rpx;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+
+.comment_cont{
+  margin-top: 20rpx;
+  padding: 32rpx;
+  border-radius: 12rpx;
+  line-height:70rpx;
+  position: relative;
+  background: #F76605;
+  color: #fff;
+  font-size: 28rpx
+}
+
+.comment_cont::before{
+  content: '';
+position: absolute;
+left: 336rpx;
+  top:-18rpx;
+  width: 0;
+  height: 0;
+  border-left: 20rpx solid transparent;
+  border-right: 20rpx solid transparent;
+  border-bottom: 20rpx solid #F76605;
+}
+
+.classfare .tle{
+  position: relative;
+  text-align: center;
+  height: 32rpx;
+  color: #F76605;
+  font-size: 32rpx;
+  line-height: 32rpx;
+  margin: 40rpx 0;
+}
+
+.classfare .tle::before{
+  content: '';
+  position: absolute;
+  width:40px;
+  height:1rpx;
+  background: #F76605;
+  top: 15rpx;
+  left: 188rpx;
+  z-index: 99;
+}
+
+.classfare .tle::after{
+  z-index: 99;
+  content: '';
+  position: absolute;
+  width:40px;
+  height:1rpx;
+  background: #F76605;
+  top: 15rpx;
+  right: 188rpx;
+}
+
+.img_box image{
+  width: 100%;
+  margin-bottom: 16rpx;
+  vertical-align: bottom
+}

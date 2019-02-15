@@ -1,0 +1,80 @@
+/* pages/addTeacher/addTeacher.wxss */
+
+.delated{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50px;
+  position: fixed;
+  right: 40rpx;
+  bottom: 120rpx;
+  background: #ff7f6c;
+  text-align: center;
+  color: #fff;
+  font-size: 28rpx;
+  line-height: 100rpx
+}
+.teacherInfo{
+  background: #fff;
+}
+
+.teacherInfo input{
+  height: 104rpx;
+  line-height: 104rpx;
+  padding: 0 32rpx;
+  font-size: 28rpx;
+  color: #bebebe;
+  border-bottom: 1rpx solid #ebebeb;
+}
+/* .teacherInfo input:nth-of-type(1){
+  border-bottom: 1rpx solid #e6e6e6;
+} */
+
+.teacher-rights{
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between;
+  align-items: flex-start; */
+  flex-wrap: wrap;
+  padding:0 32rpx;
+  padding-bottom: 0;
+}
+.rights-item{
+  padding: 6rpx 18rpx;
+  /* background: #d8d8d8; */
+  color: #bebebe;
+  font-size: 24rpx;
+  margin-bottom: 20rpx;
+  margin-right:20rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #bebebe;
+}
+
+.setting{
+  background: #fff;
+  padding:32rpx;
+  /* padding-top: 20rpx; */
+  position: relative;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-indent: 32rpx;
+  border-radius: 10rpx;
+}
+.setting::after{
+  position: absolute;
+  content: '';
+  height: 40rpx;
+  width: 8rpx;
+  top: 32rpx;
+  left:32rpx;
+  background: #ff7f6c
+}
+
+.selected{
+  background: #ff7f6c;
+  color: #fff;
+}
+
+.phone{
+  position: relative
+}

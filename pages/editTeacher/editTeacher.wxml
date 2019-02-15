@@ -1,0 +1,25 @@
+<!--pages/addTeacher/addTeacher.wxml-->
+<view class='teacherInfo'>
+<input type='text' bindinput='user' value='{{username}}' placeholder='教师姓名' placeholder-class='holder' disabled='{{disable}}'></input>
+<view class='phone'>
+<input type='number' bindinput='phone' value="{{mobile}}" placeholder='手机号' placeholder-class='holder' disabled='{{disable}}'></input>
+<!-- <image src='../../images/'></image> -->
+</view>
+</view>
+<view class='setting Nsize'>权限设置</view>
+<view class='teacher-rights'>
+<block wx:for="{{ruleList}}" wx:key="item.index">
+<block wx:if="{{status==1}}">
+<view class="rights-item {{item.state==1?'selected':''}}"  data-id="{{item.id}}" data-select="{{index}}" bindtap='selectRights'>{{item.title}}</view>
+</block>
+<block wx:if="{{status!=1}}">
+<view class="rights-item {{item.state==1?'selected':''}}"  data-id="{{item.id}}" data-select="{{index}}">{{item.title}}</view>
+</block>
+</block>
+</view>
+<view class='bt-fixed' bindtap='save' wx:if="{{status==1}}">保存修改</view>
+<view class='bt-fixed' bindtap='save' wx:if="{{status==2}}">重新邀请</view>
+<view class='bt-fixed' bindtap='save' wx:if="{{status==3}}">启用教师</view>
+
+
+<!-- <view class='delated' wx:if="{{status==1}}" bindtap='delate'>删除</view> -->

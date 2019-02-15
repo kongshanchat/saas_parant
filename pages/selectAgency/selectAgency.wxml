@@ -1,0 +1,63 @@
+<!-- pages/selectAgency/selectAgency.wxml -->
+<view class="created" wx:if="{{joined.invite_agency_list.length!=0}}">
+    <view class="tle">邀请我加入的机构</view>
+    <view class="box">
+        <view class="boxItem" wx:for="{{joined.invite_agency_list}}" bindtap='isJoin' data-tid="{{item.teacher_id}}" data-id="{{item.agency_id}}" data-name="{{item.agency_info.name}}">
+            <image wx:if="{{item.agency_info.logo!=''}}" src="{{item.agency_info.logo}}" />
+            <image wx:if="{{item.agency_info.logo==''}}" src="../../images/avatar.png" />
+            <view class="info cell-space">
+                <text class="Nsize">{{item.agency_info.name}}</text>
+                <!-- <text class="Ssize">{{item.type_text}}</text> -->
+            </view>
+            <view style='height:60rpx;line-height:80rpx' class="Usize">机构编码: {{item.agency_info.sno}}</view>
+            <image src='../../images/rights.png' class='enters'></image>
+        </view>
+    </view>
+</view>
+
+<view class="created">
+    <view class="tle">创建的机构</view>
+    <view class="box">
+        <view class="boxItem" wx:for="{{joined.found_agency_list}}" bindtap='select' data-id="{{item.agency_id}}">
+            <image wx:if="{{item.agency_info.logo!=''}}" src="{{item.agency_info.logo}}" />
+            <image wx:if="{{item.agency_info.logo==''}}" src="../../images/avatar.png" />
+            <view class="info cell-space" style='justify-content:flex-start'>
+                <text class="Nsize">{{item.agency_info.name}}</text>
+                <text class="Ssize" wx:if="{{item.agency_id==initagencyId}}">当前机构</text>
+            </view>
+            <view class='tab' wx:if="{{item.agency_id!=initagencyId}}">切换机构</view>
+            <view style='height:60rpx;line-height:80rpx' class="Usize">机构编码: {{item.agency_info.sno}}</view>
+        </view>
+    </view>
+</view>
+
+<view class="add boxItem" bindtap='createAgency'>
+    <image src="../../images/initagecy.png"/>
+    <view class="Nsize">创建新机构</view>
+</view>
+<view class="tle">已加入的机构</view>
+<view class="box">
+    <view class="boxItem" wx:for="{{joined.join_agency_list}}" bindtap='select' data-id="{{item.agency_id}}" style='margin-top:20rpx'>
+            <image wx:if="{{item.agency_info.logo!=''}}" src="{{item.agency_info.logo}}" />
+            <image wx:if="{{item.agency_info.logo==''}}" src="../../images/avatar.png" />
+            <view class="info cell-space">
+                <text class="Nsize">{{item.agency_info.name}}</text>
+                <text class="Ssize" wx:if="{{item.agency_id==initagencyId}}">当前机构</text>
+            </view>
+            <view class="info cell-space Nsize" style='margin-top:20rpx'>
+                <text class="Nsize">机构码:{{item.agency_info.sno}}</text>
+                <!-- <text class="Ssize">{{item.type_text}}</text> -->
+            </view>
+            <view class='tab' wx:if="{{item.agency_id!=initagencyId}}">切换机构</view>
+    </view>
+
+    <view class='add boxItem' wx:if="{{detail.join_agency_list.length==0}}">
+    <image src="../../images/initEngency.png" />
+    <view class="Nsize">赶快让创建者邀请你吧</view>
+    </view>
+</view>
+
+<!-- <view class="add boxItem" bindtap='joinAgency'>
+    <image src="../../images/initEngency.png" />
+    <view class="Nsize">加入机构</view>
+</view> -->

@@ -1,0 +1,37 @@
+/* pages/music/music.wxss */
+page{
+  background: #f4f4f4;
+}
+
+.NoDatas{
+  height: calc(100vh);
+  width:100%;
+background:#f4f4f4;
+display:flex;
+flex-direction:column;
+/* justify-content:center; */
+align-items:center;
+}
+.NoDatas image{
+  width: 360rpx;
+  height: 328rpx;
+  margin-top:160rpx;
+
+}
+
+
+.signstatus{
+  position: absolute;
+  height: 32rpx;
+  width: 88rpx;
+  line-height: 32rpx;
+  color: #f76605;
+  text-align: center;
+  right: 32rpx;
+  top: 0;
+  font-size:24rpx;
+  background: #FFE8D9;
+  /* border-radius: 12rpx; */
+  border-bottom-right-radius: 8rpx;
+  border-bottom-left-radius: 8rpx;
+}

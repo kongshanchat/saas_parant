@@ -1,0 +1,27 @@
+<!--pages/selectStu/selectStu.wxml-->
+<view class='body'>
+<view class='stuItem' wx:for="{{list}}" bindtap='select' data-stu_id='{{item.student_id}}' data-third_id='{{item.third_id}}'>
+    <view class='circle'>
+    <view class='cir_avatar'>
+      <image  class='avatar' src='{{item.avatar}}' mode='scaleToFill'></image>
+      <image src='../../images/male.png' class='sex' wx:if="{{item.gender==1}}"></image>
+      <image src='../../images/famale.png' class='sex' wx:if="{{item.gender==0}}"></image>
+    </view>
+    <view class='right_tops'>
+      <view class='name'>
+      
+      <text>{{item.username}}</text>
+      <view class='current' wx:if="{{select_id==item.student_id}}">当前学员</view>
+      </view>
+      <view class='birth' wx:if="{{detail.birthday!=''}}">
+        <image src='../../images/birth.png' class='birthicon'></image>
+        <text wx:if="{{item.birthday!=''}}">{{item.birthday}}</text> 
+        <text wx:if="{{item.birthday==''}}">未录入</text>
+        </view>
+      <!-- <view class='statusList'>
+        <view class='statuItem' wx:for="{{item.lesson_list}}" wx:for-item="lesson">{{lesson}}</view>
+      </view> -->
+    </view>
+  </view>
+</view>
+</view>

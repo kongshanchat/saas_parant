@@ -1,0 +1,70 @@
+<!--viewages/music/music.wxml-->
+
+
+<view class='body'>
+  <view wx:if="{{today.length!=0}}">
+
+    <view class='title Nsize'>
+      <view class='lines'></view>
+      <text>今日课程</text>
+    </view>
+
+    <view class='todayCourse'>
+      <view class='couserItem' wx:for="{{today}}">
+        <view class='signstatus' wx:if="{{item.sign_status==1}}">已签到</view>
+        <view class='course_tle'>
+          <image src='../../images/roomset.png'></image>
+          <text>{{item.lesson_name}}</text>
+        </view>
+        <view class='coursetime cell-space'>
+          <text>{{item.date}} {{item.begin_time}} - {{item.end_time}}</text>
+          <text>{{item.dec_num}} 课时</text>
+        </view>
+        <view class='couserInfo cell-space'>
+          <text>{{item.teacher_name}}</text>
+          <text>{{item.class_name}}</text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+  <view wx:if="{{future.length!=0}}">
+    <view class='title Nsize' style="margin-top:24rpx">
+      <view class='lines'></view>
+      <text>未来课程</text>
+    </view>
+
+    <view class='todayCourse'>
+      <view class='couserItem' wx:for="{{future}}">
+        <!-- <view class='signstatus' wx:if="{{item.status==1}}">已签到</view> -->
+        <view class='course_tle'>
+          <image src='../../images/roomset.png'></image>
+          <text>{{item.lesson_name}}</text>
+        </view>
+        <view class='coursetime cell-space'>
+          <text>{{item.date}} {{item.begin_time}}- {{item.end_time}}</text>
+          <text>{{item.dec_num}} 课时</text>
+        </view>
+        <view class='couserInfo cell-space'>
+          <text>{{item.teacher_name}}</text>
+          <text>{{item.class_name}}</text>
+        </view>
+      </view>
+      <!-- 无更多数据提醒 -->
+      <view style='margin:20rpx 0'>
+        <block wx:if="{{has_more==true}}">
+          <zan-loadmore type="loading"></zan-loadmore>
+        </block>
+        <block wx:if="{{has_more==false}}">
+          <zan-loadmore type="text" text="暂无更多数据"></zan-loadmore>
+        </block>
+      </view>
+    </view>
+  </view>
+  
+</view>
+
+<view class='NoDatas' wx:if="{{future.length==0 && today.length==0}}">
+    <image src='../../images/nokebiao.png'></image>
+</view>

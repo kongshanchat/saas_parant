@@ -1,0 +1,2 @@
+<!--pages/auth/auth.wxml-->
+<web-view src="{{url}}?+'phone'={{phone}}" bindmessage="handleGetMessage"></web-view>

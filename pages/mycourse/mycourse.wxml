@@ -1,0 +1,18 @@
+<!--pages/mycourse/mycourse.wxml-->
+<view class='body'>
+  <view class='kexiaoCard' wx:for="{{list}}">
+    <view class='course_tle'>
+      <image src='../../images/roomset.png'></image>
+      <text>{{item.lesson_name}}</text>
+    </view>
+
+    <view class='kexiaoItem remain'>
+      <view>{{item.lesson_time_count}}</view>
+      <view>剩余课时</view>
+    </view>
+    <view class='kexiaoItem hasKexiao'>
+      <view>{{item.lesson_deduct_count}}</view>
+      <view>已消课时</view>
+    </view>
+  </view>
+</view>

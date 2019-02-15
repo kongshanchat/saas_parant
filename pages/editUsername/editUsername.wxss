@@ -1,0 +1,30 @@
+/* pages//editUsername/editUsername.wxss */
+.edits{
+  padding: 32rpx;
+  background: #fff
+}
+.inpu input{
+  height: 100rpx;
+  border-radius: 10rpx;
+  
+  padding: 0 20rpx;box-sizing: border-box;
+  width: 100%;
+  background: #f5f5f5;
+  
+}
+.inpu{
+  
+}
+
+.edit{
+  height: 100rpx;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+  color: #fff;
+  text-align: center;
+  width: 710rpx;
+  box-sizing: border-box;
+  line-height: 100rpx;
+  background: #ff7f6c;
+  margin: 32rpx auto;
+}

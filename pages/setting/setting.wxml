@@ -1,0 +1,16 @@
+<!--pages/setting/setting.wxml-->
+<view class='cell-space item'>
+  <view class='Nsize'>头像</view>
+  <view class='right' bindtap='avatar'>
+    <image mode='scaleToFill' src='{{avatar}}' class='avatar'></image>
+    <image src='../../images/more.png' class='more'></image>
+  </view>
+</view>
+
+<view class='cell-space item'>
+  <view class='Nsize'>用户名</view>
+  <view class='right' bindtap='username' data-username="{{username}}">
+   <view class='Usize' style='margin-right:32rpx;'>{{username}}</view>
+    <image src='../../images/more.png' class='more'></image>
+  </view>
+</view>

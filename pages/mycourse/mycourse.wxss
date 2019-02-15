@@ -1,0 +1,67 @@
+/* pages/mycourse/mycourse.wxss */
+.kexiaoCard{
+padding: 32rpx;
+background: #fff;
+overflow: hidden;
+margin-bottom: 16rpx;
+box-shadow:0px 4px 6px 0px rgba(190,190,190,0.4);
+border-radius:12rpx;
+}
+
+.kexiaoItem{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  float: left;
+  width: 50%;
+  /* height: 120rpx; */
+  position: relative
+}
+.remain{
+  position: relative
+}
+
+.remain::before{
+content: '';
+position: absolute;
+height: 40rpx;
+background:#ebebeb;
+width: 2rpx;
+top: 46rpx;
+z-index: 999;
+right: 0
+}
+
+.kexiaoItem view{
+  font-size: 24rpx;
+  color: #999999;
+  
+
+}
+
+.remain view:nth-of-type(1){
+  color: #FC9E03;
+  font-size:48rpx;
+  font-weight:500;
+  margin-bottom: 20rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  margin-top: 32rpx;
+}
+
+.hasKexiao view:nth-of-type(1){
+  height: 48rpx;
+  color: #F76605;
+  font-size:48rpx;
+  font-weight:500;
+  margin-bottom: 20rpx;
+  line-height: 48rpx;
+  margin-top: 32rpx;
+}
+
+.course_tle {
+margin-bottom: 0;
+padding-bottom: 32rpx;
+border-bottom: 1rpx solid #ebebeb;
+}

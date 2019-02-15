@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/auth/auth",
+    "pages/coueseForm/coueseForm",
+    "pages/my/my",
+    "pages/signs/signs",
+    "pages/homework/homework",
+    "pages/login/login",
+    "pages/selectStu/selectStu",
+    "pages/commentDetail/commentDetail",
+    "pages/changeAgency/changeAgency",
+    
+    "pages/mycourse/mycourse",
+    "pages/homeworkDetail/homeworkDetail",
+    "pages/teacherComment/teacherComment",
+    "pages/courseComment/courseComment",
+    "pages/recordDetail/recordDetail",
+    "pages/selectAgency/selectAgency",
+
+    "pages/setting/setting",
+    "pages/welogin/welogin",
+    "pages/order/order"
+  ],
+  "navigateToMiniProgramAppIdList": [
+    "wxf156f99010f9575d"
+],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F76605",
+    "navigationBarTitleText": "乐鸟教务家长端",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#C3B8B4",
+    "selectedColor": "#F76605",
+    "borderStyle":"#f4f4f4",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/signs/signs",
+        "text": "排课列表",
+        "iconPath": "images/form_01.png",
+        "selectedIconPath": "images/form_02.png"
+      },
+      {
+        "pagePath": "pages/coueseForm/coueseForm",
+        "text": "课消记录",
+        "iconPath": "images/sign_02.png",
+        "selectedIconPath": "images/sign_01.png"
+      },
+      {
+        "pagePath": "pages/homework/homework",
+        "text": "课评作业",
+        "iconPath": "images/work_01.png",
+        "selectedIconPath": "images/work_02.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "个人中心",
+        "iconPath": "images/my_01.png",
+        "selectedIconPath": "images/my_02.png"
+      }
+    ]
+  }
+}

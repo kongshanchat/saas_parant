@@ -1,0 +1,20 @@
+<view class="bodys">
+  <view class='tops_avatar'>
+    <image src='{{detail.teacher.avatar}}'></image>
+    <view class='teacherName'>
+      {{detail.teacher.username}}
+    </view>
+  </view>
+
+  <view class='comment_cont'>
+    {{detail.content}}
+  </view>
+
+  <view class='classfare'>
+    <view class='tle'>课堂情况</view>
+
+    <view class='img_box'>
+    <image wx:for="{{detail.pics}}" catchtap='preview' wx:for-item="pic" src='{{pic}}' mode='scaleTofill'  data-pic="{{detail.pics}}" data-cur="{{pic}}"></image>
+    </view>
+  </view>
+</view>

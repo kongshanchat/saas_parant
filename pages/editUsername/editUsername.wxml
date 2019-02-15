@@ -1,0 +1,11 @@
+<!--pages//editUsername/editUsername.wxml-->
+<view class='edits'>
+  <view class="inpu">
+    <input type='text' placeholder='请输入新用户名' placeholder-class='holder' class='Nsize' bindinput='inputs'></input>
+  </view>
+
+</view>
+
+  <view class="inpu edit" bindtap='edit'>
+  保存修改
+  </view>

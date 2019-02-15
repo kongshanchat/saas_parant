@@ -1,0 +1,14 @@
+<view class="body">
+  <view class='item' wx:for="{{list}}" data-id="{{item.agency_id}}" bindtap='changeAgency'>
+    <image wx:if="{{item.agency_info.logo!=''}}" src='{{item.agency_info.logo}}' mode='scaleTofill' class='agency_logo'></image>
+    <image wx:if="{{item.agency_info.logo==''}}" src='../../images/initagecy.png' mode='scaleTofill' class='agency_logo'></image>
+    
+    <view class='itemInfo'>
+      <view>{{item.agency_info.name}}</view>
+      <view wx:if="{{item.agency_id==initagencyId}}">当前机构</view>
+    </view>
+    <image src='../../images/enter.png' class='check_icon'></image>
+    <!-- 
+    <image src='../../images/unchecks.png' class='check_icon' wx:if="{{item.id!=1}}"></image> -->
+  </view>
+</view>

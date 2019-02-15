@@ -1,0 +1,78 @@
+<scroll-view>
+  <view class='container'>
+    <view class="containerItem">
+      <text class="textleft">学员</text>
+      <text class="textright">{{orderInfo.student_user_name}}</text>
+    </view>
+    <view class="containerItem">
+      <text class="textleft">签约日期</text>
+      <text class="textright">{{orderInfo.signtime}}</text>
+    </view>
+  </view>
+  <view class='container margin-top'>
+    <view class="containerItem">
+      <text class="textleft">订单类型</text>
+      <text class="textright">课程{{orderInfo.contract_type_text}}</text>
+    </view>
+    <view class="containerItem">
+      <text class="textleft">订单状态</text>
+      <text class="textright">{{orderInfo.status_text}}</text>
+    </view>
+  </view>
+
+  <view class='container margin-top'>
+    <view class="containerItem">
+      <text class="textleft">所购买课程</text>
+      <text class="textright">{{orderInfo.title}}</text>
+    </view>
+    <view class="containerItem">
+      <text class="textleft">课时数</text>
+      <text class="textright">{{orderInfo.lesson_count}}</text>
+    </view>
+    <view class="containerItem">
+      <text class="textleft">其他金额</text>
+      <text class="textright">{{orderInfo.fee}}</text>
+    </view>
+    <view class="containerItem">
+      <text class="textleft">课程总价</text>
+      <text class="textright">{{orderInfo.total}}</text>
+    </view>
+  </view>
+
+  <view class='container margin-top'>
+    <view class="containerItem">
+      <text class="textleft">已上课时</text>
+      <text class="textright">{{orderInfo.already_lesson}}</text>
+    </view>
+    <view class="containerItem">
+      <text class="textleft">优惠折扣</text>
+      <text class="textright">{{discount}}%</text>
+    </view>
+    <view class="containerItem">
+      <text class="textleft">其他优惠</text>
+      <text class="textright">{{orderInfo.free_money}}</text>
+    </view>
+  </view>
+
+  <view class="containerItem margin-top noline">
+    <view class='weight'>
+      <text class="textgrey textbig">优惠金额：</text>
+      <text class="textred textbig">￥0.00</text>
+    </view>
+    <view class='weight'>
+      <text class="textleft textbig">总金额：</text>
+      <text class="textred textbig">￥{{orderInfo.money}}</text>
+    </view>
+  </view>
+
+  <view class="containerItem margin-top" wx:if="{{isShow}}">
+    <view class='weight'>
+      <text class="textgrey">已退课时：</text>
+      <text class="textred textbig">{{orderInfo.already_lesson}}</text>
+    </view>
+    <view class='weight'>
+      <text class="textleft">已退金额：</text>
+      <text class="textred">￥{{orderInfo.refund_order.refund_lesson_money}}</text>
+    </view>
+  </view>
+</scroll-view>
